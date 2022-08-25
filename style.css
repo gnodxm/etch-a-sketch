@@ -1,0 +1,52 @@
+body {
+	font-family: 'VT323', monospace;
+	background-color: black;
+	color: white;
+}
+
+.gameBoard {
+	display: flex;
+	justify-content: center;
+}
+
+
+.sketch {
+	width: 600px;
+	height: 600px;
+	background-color: black;
+	border: none;
+	box-shadow: 0 0 5px  white;
+	padding: 0;
+	margin-left: 50px;
+}
+
+.sketch:hover {
+	cursor:cell ;
+}
+
+.control {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding-top: 30px;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 64px;
+	text-align: center;
+}
+
+.row {
+	display: flex;
+}
+
+.cell {
+	transition: 1s;
+
+}
+
+.selected {
+	background-color: blue;
+	color: black;
+}

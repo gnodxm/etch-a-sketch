@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Etch-a-Sketch</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="./script.js" defer></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<h1>ETCH-A-SKETCH</h1>
+		<div class="gameBoard">
+			<div class="control">
+				<div>
+					Select size
+					<input class="sizeGlide" type="range" min="1" max="100" value="16" />
+					<span class="dim">16 x 16</span>
+				</div>
+				<div>
+					Select Color <input class="colorPick" type="color" value="#ffffff" />
+				</div>
+				<div class="colorMode">
+					Color Mode
+					<button class="mode selected">SOLID</button>
+					<button class="mode">RANDOM</button>
+				</div>
+				<div>
+					<button class="vanish">VANISH</button>
+				</div>
+			</div>
+			<div class="sketch"></div>
+		</div>
+	</body>
+</html>
